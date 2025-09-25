@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article>
+  {{ with .Title -}}
+  <h1>{{- . -}}</h1>
+  {{- end }} {{ with .Content -}}
+  <div class="post-content">{{- . -}}</div>
+  {{- end }}
+  <hr />
+  <h2>Blog posts</h2>
+ {{ $paginator := .Paginate (where .Site.RegularPages "Params.categories" "intersect" (slice "posts")) }}
+ {{ range $paginator.Pages }}
+  <li class="posts-list-item">
+    <h3>
+      <a class="posts-list-item-title" href="{{ .RelPermalink }}"
+        >{{ .Title }}</a
+      >
+    </h3>
+    <div class="posts-list-excerpt">
+      {{ .Summary }}
+      <a class="read-more" href="{{ .RelPermalink }}">Read more →</a>
+    </div>
+  </li>
+  {{ end }} {{ partial "pagination.html" $ }}
+</article>
+{{ end }}

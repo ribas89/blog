@@ -1,0 +1,6 @@
+[submodule "content/resume/recruiter"]
+	path = content/resume/recruiter
+	url = https://github.com/ribas89/ribas89.git
+[submodule "themes/hugo-theme-m10c"]
+	path = themes/hugo-theme-m10c
+	url = https://github.com/vaga/hugo-theme-m10c.git

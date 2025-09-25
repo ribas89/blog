@@ -1,0 +1,71 @@
+{
+  "baseURL": "",
+  "relativeURLs": true,
+  "canonifyURLs": false,
+  "languageCode": "en-us",
+  "title": "RIBlog",
+  "theme": "hugo-theme-m10c",
+  "publishDir": "S:\\projects\\blog",
+  "pagination": {
+    "pagerSize": 8
+  },
+  "cleanDestinationDir": true,
+  "Params": {
+    "author": "ribs",
+    "cover_dimming_class": "bg-transparent",
+    "featured_image_class": "cover bg-center",
+    "avatar": "/images/ribs-big-green.webp",
+    "background": "images/header1903-1268.webp",
+    "description": "A sailor's logbook through the ocean of bytes and bugs",
+    "social": [
+      {
+        "icon": "brand-deviantart",
+        "name": "DeviantArt",
+        "url": "https://www.deviantart.com/ribas89"
+      },
+      {
+        "icon": "brand-github",
+        "name": "Github",
+        "url": "https://github.com/ribas89"
+      },
+      {
+        "icon": "brand-kofi",
+        "name": "Ko-fi",
+        "url": "https://ko-fi.com/ribas89"
+      },
+      {
+        "icon": "brand-linkedin",
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/ribas89/"
+      },
+      {
+        "icon": "brand-protonmail",
+        "name": "Protonmail",
+        "url": "mailto:ribas89@proton.me"
+      }
+    ]
+  },
+  "menu": {
+    "main": [
+      {
+        "identifier": "home",
+        "name": "Home",
+        "url": "/",
+        "weight": 1
+      },
+      {
+        "identifier": "resume",
+        "name": "Resumes",
+        "url": "/resume",
+        "weight": 1
+      }
+    ]
+  },
+  "markup": {
+    "goldmark": {
+      "renderer": {
+        "unsafe": true
+      }
+    }
+  }
+}

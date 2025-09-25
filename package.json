@@ -1,0 +1,10 @@
+{
+  "name": "ribas89",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "hugo --cleanDestinationDir --gc --logLevel debug --minify --noBuildLock --forceSyncStatic",
+    "serve": "hugo serve --ignoreCache --disableFastRender --logLevel debug --forceSyncStatic --noHTTPCache --bind 0.0.0.0",
+    "update:resume": "git submodule update --init --recursive content/resume/recruiter && git submodule update --remote content/resume/recruiter"
+  }
+}

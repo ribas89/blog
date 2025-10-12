@@ -189,6 +189,19 @@ $gradient-stops: (
   color: $blue-highlight;
 }
 
+.app-container ol {
+  padding-left: 0.6rem;
+}
+
+.app-container li > p {
+  margin: 0;
+  display: contents;
+}
+
+.app-container li:has(> p) {
+  margin-top: 1rem;
+}
+
 @media (min-width: 2450px) {
   body {
     background-size: auto;

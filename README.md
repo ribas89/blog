@@ -12,6 +12,7 @@ You can view the blog at the following links:
 - IPFS Gateway: [ipfs.io](https://ipfs.io/ipns/k51qzi5uqu5dj1chhvgfyv3ifspo0uz53ujl0e70ikb8fbdupdaoouhp6og02f)  
 - Dweb Link: [dweb.link](https://k51qzi5uqu5dj1chhvgfyv3ifspo0uz53ujl0e70ikb8fbdupdaoouhp6og02f.ipns.dweb.link/)  
 - W3S Link: [w3c.link](https://k51qzi5uqu5dj1chhvgfyv3ifspo0uz53ujl0e70ikb8fbdupdaoouhp6og02f.ipns.w3s.link/)  
+- GitHub Pages: [ribas89.github.io/blog](https://ribas89.github.io/blog/)  
 
 ## 🛠️ Tech Stack
 

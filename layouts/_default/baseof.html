@@ -23,6 +23,9 @@
     {{ template "_internal/twitter_cards.html" . }}
     {{ template "_internal/opengraph.html" . }}
 
+{{ $script := resources.Get "js/general.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+
   </head>
 {{ $depth := sub (len (split .RelPermalink "/")) 2 }}
 {{ $up := strings.Repeat $depth "../" }}
@@ -53,8 +56,8 @@
       </div>
       {{- end }}
       <div class="app-header-footer">
-        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="app-header-back-to-top">⬆ back to top</button>
         <p class="app-header-build">build {{ now | time.Format "2006-01-02 15:04:05" }}</p>
+        <button onclick="scrollToTop(event)" class="app-header-back-to-top">{{ partial "icon.html" (dict "ctx" . "name" "chevron-up" "title" "Back to top") }}back to top</button>
       </div>
     </header>
     <main class="app-container">

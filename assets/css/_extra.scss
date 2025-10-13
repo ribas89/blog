@@ -67,6 +67,7 @@ $gradient-stops: (
   border-top-left-radius: 4rem;
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 
 .app-header-avatar {
@@ -94,14 +95,22 @@ $gradient-stops: (
   border-radius: 1rem;
   font-size: 1rem;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease;
   padding: 0.5rem 1rem;
   color: #57cc8a;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .app-header-back-to-top:hover {
   background-color: rgba(87, 204, 138, 0.6);
   color: #fff;
+}
+
+.app-header-back-to-top svg{
+  margin-right: 0.5rem;
 }
 
 .app-header-build {
@@ -118,6 +127,7 @@ $gradient-stops: (
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-bottom: 2rem;
+  z-index: 1;
 }
 
 
@@ -246,18 +256,32 @@ $gradient-stops: (
   }
   .app-header {
     background: linear-gradient(to bottom, $gradient-stops);
-    position: inherit;
     border-top-left-radius: 4rem;
     border-top-right-radius: 4rem;
     width: inherit;
     min-height: auto;
+    top: -100%;
+    opacity: 1;
+    transition: opacity 0.3s;
   }
+
+  .app-header.hidden {
+    opacity: 0;
+  }
+
   .app-header-description {
     padding: 0px 1rem;
   }
+
   .app-header-back-to-top {
-    display: none;
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 0;
+    background-color: rgba(87, 204, 138, 0.6);
+    padding: 1rem 0;
+    opacity: 0;
   }
+
   .post-content > pre,
   .post-content .highlight > pre,
   .post-content .highlight > div {
@@ -279,7 +303,6 @@ $gradient-stops: (
     border-left: 1px solid rgb(139, 139, 139);
     text-align: center;
   }
-
 }
 
 @media (max-width: 500px) {

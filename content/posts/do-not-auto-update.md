@@ -28,16 +28,13 @@ This part is easy. Just look at the news and videos about the update. Big tech c
 ### How do I measure the **cons**?
 This part is harder. Besides some obvious ones, like apps breaking or battery draining faster, many are subjective and depend on your resources to handle a failed update. Do you have backups? Do you have spare hardware? Do you have the time to troubleshoot? The fewer resources you have, the heavier the cons become.  
 
-Like almost anything on the Internet, you can look up information about the update. A simple search like `problems with september update pixel error` would have saved a lot of headaches for the poor Pixel users who installed it blindly. Learning from other people’s pain is free insurance.  
-```go
-fmt.Println("Hello, Hugo")
-```
+Like almost anything on the Internet, you can look up information about the update. A simple search like **problems with september update pixel error** would have saved a lot of headaches for the poor Pixel users who installed it blindly. Learning from other people’s pain is free insurance.  
 
 And if you cannot find anything about the update, **HOLD IT AT ALL COSTS**.  
 
 **Companies do not care about user satisfaction anymore**
 
-That was left in the 2000s. If a device or software **SCREAMS** for you to update but there is no information available, it means they want **YOU** to test it. The notes on these updates are always written to look unusually better than the good old ```bug fixes and improvements```. Another way for marketing to psychologically push you into becoming their free quality assurance.  
+That was left in the 2000s. If a device or software **SCREAMS** for you to update but there is no information available, it means they want **YOU** to test it. The notes on these updates are always written to look unusually better than the good old **bug fixes and improvements**. Another way for marketing to psychologically push you into becoming their free quality assurance.  
 
 And with this we reached the **why** you should update.  
 
